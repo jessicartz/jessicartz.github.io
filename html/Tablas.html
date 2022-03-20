@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tablas html</title>
+	<link rel="stylesheet" href="../css/style_page.css" type="text/css">
+	<style type="text/css">
+		table,th,td{
+			border: 5px solid #6A638C;
+			border-collapse: collapse;
+		}
+		th,td{
+			padding:20px;
+			text-align: center;
+			/*background-color: #F09FA1;*/
+		}
+		/*h2{
+			font-size: 36px;
+		}*/
+		tr:hover{
+			background-color: yellow;
+		}
+
+		#style_tabla_1,#style_tabla_1 th, #style_tabla_1 td{
+		 border:3px solid #E98485;
+		 border-collapse:separate;
+		 background-color: darkviolet;
+		}
+		#style_tabla_1{
+			width:800px;
+			height:300px;
+		}
+		#style_tabla_1 th{
+			background-color: #AFAFF3;
+		}
+		#style_tabla_1 td{
+			text-align: center;
+		}
+		/*}
+		#style_tabla_1 th{
+			border: 3px solid #E98485;
+		}*/
+		#style_tabla_2 th,#style_tabla_2 td{
+			border:3px solid #1C82E1;
+		}
+		#style_tabla_2 tr:nth-child(even){
+			background-color:#090A0F;
+			color:aliceblue;
+			border:none;
+		}
+		#style_tabla_2 tr:nth-child(odd){
+			background-color: blue;
+			color: blanchedalmond;
+		}
+		#style_tabla_2 th{
+			background-color: purple;
+			color:aliceblue;
+		}
+		/*#encabezado_verde{
+			color:green;
+		}
+		.encabezado_par{
+			color:deeppink;
+		}
+		.encabezado_impar{
+			color:aqua;
+		}*/
+	body,td,th {
+    font-size: medium;
+}
+    </style>
+	<link href="../css/style_pageimage.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/carter-one:n4:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<header>
+	<h1>TABLAS</h1>
+</header>
+<nav> <ul>
+	<li><a href="../index.html">Inicio</a></li>		 
+    <li><a href="estilos_texto.html">Estilos de texto</a></li>
+    <li><a href="Tablas.html">Tablas</a></li>
+    <li><a href="listas.html">Listas</a></li>
+    <li><a href="imagenes.html">Imágenes</a></li>
+    <li><a href="video.html">Video</a></li>
+    <li><a href="audio.html">Audio</a></li>
+	<li><a href="formularios.html">Formulario</a></li>
+ <li><a href="fuentes.html">Fuentes y animación</a></li>
+	</ul></nav>
+<main>
+  <section>
+	<h2 class="encabezado_impar" >TABLA SIMPLE</h2>
+		<p></p>	
+	  <br>
+	<table style="border: 1px solid #151723">
+	  <thead>
+		<tr>
+		  <th colspan="3">Nombre</th>
+			<!--<th>Apellido Materno</th>
+			<th>Nombre</th>-->
+			<th>Edad</th>
+			<th>Celular</th>
+			<th>Email</th>
+		  </tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td>Herrera</td>
+			<td>Palacios</td>
+			<td>Alejandro</td>
+			<td>16</td>
+			<td>1254513</td>
+			<td>mony.34@gmail.com</td>
+			</tr>
+			<tr>
+			<td>Perez</td>
+			<td>Juarez</td>
+			<td>Arturo</td>
+			<td>15</td>
+			<td>2848665</td>
+			<td>pp@gmail.com</td>
+			</tr>
+		</tbody>
+		<tfoot>
+		
+		</tfoot>
+	  </table>
+	</section>
+  <section>
+	  <h2 class="encabezado_par">TABLA MODIFICADA</h2>
+	  <p>A tráves de una regla de identificador en CSS</p>
+	  <br>
+	  <table id="style_tabla_1">
+	    <tbody>
+	      <tr>
+	        <th scope="col">Nombre</th>
+	        <th scope="col">Dirección</th>
+	        <th scope="col">Teléfono</th>
+	        <th scope="col">Celular</th>
+          </tr>
+	      <tr>
+	        <td>Maria</td>
+	        <td>Calle 5 Mayo #45 col. Flores</td>
+	        <td>222 2458565</td>
+	        <td>2464765896</td>
+          </tr>
+	      <tr>
+	        <td>José</td>
+	        <td>Av. Hidalgo #15 col. centro</td>
+	        <td>246 1258963</td>
+	        <td>223569745</td>
+          </tr>
+	      <tr>
+	        <td>Yoongi</td>
+	        <td>Calle Roble #4 </td>
+	        <td>222 284826</td>
+	        <td>2224578611</td>
+          </tr>
+	      <tr>
+	        <td>Pedro</td>
+	        <td>Privada 3 sur #598</td>
+	        <td>222 2154632</td>
+	        <td>2256492329</td>
+          </tr>
+        </tbody>
+    </table>
+	  </section>
+  <section>
+	  <h2 id="encabezado_verde">Este es el contenido de la etiqueta H2 de diseño</h2>
+	  <p> Con rallas pares e impares</p>
+	  <br>
+	  <table id="style_tabla_2">
+		  <thead>
+		    <tr>
+	        <th scope="col">Marca</th>
+	        <th scope="col">Modelo</th>
+	        <th scope="col">Color</th>
+          </tr>
+		  </thead>
+	    <tbody>
+	      <tr>
+	        <td>Seat</td>
+	        <td>Ibiza</td>
+	        <td>Rojo</td>
+          </tr>
+	      <tr>
+	        <td>VW</td>
+	        <td>Bora</td>
+	        <td>Blanco</td>
+          </tr>
+	      <tr>
+	        <td>Renault</td>
+	        <td>X</td>
+	        <td>Verde</td>
+          </tr>
+			  <tr>
+	        <td>Ford</td>
+	        <td>X</td>
+	        <td>Azul</td>
+          </tr>
+        </tbody>
+    </table>
+	  </section>
+ <section>
+	  <h2 class="encabezado_par">Este es el contenido de la etiqueta H2 de diseño</h2>
+	  <p> Este es el contenido de la etiqueta P de diseño</p>
+	  Coloca aquí el contenido de la nueva etiqueta section</section>
+	</main>
+<footer>
+  <h6>Elaborado por Jessica Rodríguez Toriz</h6>
+</footer>
+	
+</body>
+</html>
